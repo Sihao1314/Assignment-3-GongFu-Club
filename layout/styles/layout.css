@@ -1,0 +1,464 @@
+@charset "utf-8";
+/*
+Template Name: Yoffa
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("font-awesome.min.css");
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row1, .row1 a{}
+.row2, .row2 a{}
+.row3, .row3 a{}
+.row4, .row4 a{}
+.row5, .row5 a{}
+
+
+/* Header + Pageintro Wrapping Spacer
+--------------------------------------------------------------------------------------------------------------- */
+.topspacer{padding:180px 0 0;}
+.topspacer input[type=text] {
+	float:right;
+	padding: 4px;
+	border: none;
+	margin-top: 25px;
+	margin-left: 26px;
+	margin-right: 12px;
+	font-size: 16px;
+	border-radius: 16px;
+  }
+  
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{
+	padding:0 15px;
+}
+  
+
+
+#header #logo{margin:28px 0 0 0;}
+#header #logo h1{margin:0; padding:0;font-style: italic; font-family: Arial, Helvetica, sans-serif;font-size:22px; text-transform:uppercase;}
+#header #logo h1{color: #ff5050;}
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:200px 0;}
+
+#pageintro article{max-width:65%; margin:0 auto; text-align:center;}
+#pageintro article *{text-transform:uppercase;}
+#pageintro article .heading{margin:0 0 30px 0; padding:0; line-height:1; font-family: Arial, Helvetica, sans-serif;font-size:38px;}
+#pageintro article p{margin:0;}
+#pageintro article p:first-of-type{margin-bottom:20px; font-size:20px; letter-spacing:5px;}
+#pageintro article footer{margin-top:50px;}
+
+
+/* Intro Blocks
+--------------------------------------------------------------------------------------------------------------- */
+#introblocks{
+	float:center;
+}
+
+#introblocks ul{display:table; width:100%; height:100%; border:none;}
+#introblocks ul li{border-radius: 16px; display:table-cell; width:33.33333333333333%; height:100%; padding:5% 2%; border:solid; border-collapse:collapse; border-width:0 1px 0 0;}
+#introblocks ul li:last-child{border:0;}
+#introblocks ul li *{margin:0; padding:0; line-height:normal;}
+#introblocks ul li div{position:relative; padding-left:65px; word-wrap:break-word;}
+#introblocks ul li div i{display:block; position:absolute; top:-2px; left:0; width:50px; font-size:46px; line-height:1;}
+#introblocks ul li div .heading{font-size:1.2rem;}
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:80px 0;}
+
+/* Content */
+.container .content{}
+
+.sectiontitle{margin-bottom:50px;}
+.sectiontitle *{margin:0;}
+
+.intro{}
+.intro article{max-width:320px;}
+.intro article .heading{font-family: 'Times New Roman', Times, serif ;font-size:20px;}
+.intro article .excerpt{padding:20px;}
+.intro article .excerpt *{margin:0 0 10px 0;}
+.intro article .excerpt footer{margin:0;}
+
+.cta{}
+.cta footer{margin-bottom:0;}/* Used when elements stack in small viewports */
+
+/* Comments */
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li{margin:0 0 10px 0; padding:15px;}
+#comments .avatar{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid;}
+#comments address{font-weight:bold;}
+#comments time{font-size:smaller;}
+#comments .comcont{display:block; margin:0; padding:0;}
+#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
+
+#comments form{display:block; width:100%;}
+#comments input, #comments textarea{width:100%; padding:10px; border:1px solid;}
+#comments textarea{overflow:auto;}
+#comments div{margin-bottom:15px;}
+#comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
+
+
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0;}
+
+#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+
+#footer nav{text-transform:uppercase;}
+#footer nav ul li{display:inline-block; margin-right:20px;}
+#footer nav ul li:last-child{margin-right:0;}
+
+#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+#footer .contact li *{margin:0; padding:0; line-height:1.6;}
+#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+
+#footer input, #footer button{border:1px solid;}
+#footer input{display:block; width:100%; padding:8px;border-radius: 16px;}
+#footer button{padding:8px 18px 10px; text-transform:uppercase; font-weight:700; cursor:pointer;border-radius: 16px;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+/* Transition Fade
+This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices
+If you don't want it to fade all elements, you have to list the ones you want to be faded individually
+Delete it completely to stop fading
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{}
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:30px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:35px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav form{display:none; margin:0; padding:0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:1px solid;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+
+
+
+/* Back to Top */
+#backtotop{border-radius: 16px;z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
+
+.faico a{color:#FFFFFF; background-color:#272727;}
+
+.faicon-dribble:hover{background-color:#EA4C89;}
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+.faicon-vk:hover{background-color:#4E658E;}
+
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#474747; background-color:#e0e0eb;}
+a{color:#ff5050;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#ff5050;}
+.overlay{color:#e0e0eb; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+
+.btn, .btn.inverse:hover, a .icon.fa, a.inverse:hover .icon.fa{color:#e0e0eb; background-color:#ff5050; border-color:#ff5050;border-radius: 16px;}
+.btn:hover, .btn.inverse, a:hover .icon.fa, a.inverse .icon.fa{color:inherit; background-color:transparent; border-color:inherit;}
+
+
+/* Rows */
+.row1{color:#474747;}
+.row2{color:#474747; background-color:#F6F6F6;}
+.row3{color:#474747; background-color:#e0e0eb;}
+.row4{color:#CBCBCB; background-color:#272727;}
+.row5, .row5 a{color:#474747; background-color:#e0e0eb;}
+
+
+/* Header */
+#header{color:inherit; background-color:#e0e0eb;}
+#header #logo a{color:inherit;}
+
+
+/* Intro Blocks */
+#introblocks{color:#e0e0eb; background:#ff5050;}
+#introblocks ul, #introblocks ul li{border-color:#e0e0eb;}
+
+
+/* Content Area */
+.intro article{color:inherit; background-color:#e0e0eb;}
+
+
+/* Footer */
+#footer .heading{color:#e0e0eb;}
+#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.2);}
+#footer nav a{color:inherit;}
+#footer nav li:first-child a, #footer nav a:hover{color:#ff5050;}
+#footer input, #footer button{border-color:transparent;}
+#footer input{color:#474747; background-color:#F6F6F6;}
+#footer input:focus{border-color:#ff5050;}
+#footer button{color:#e0e0eb; background-color:#ff5050;}
+
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#ff5050; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#e0e0eb; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#e0e0eb; background-color:#ff5050;}
+#mainav form select{color:#e0e0eb; background-color:#000000; border-color:rgba(255,255,255,.2);}
+
+
+
+.container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
+.container .sidebar nav a:hover{color:#ff5050;}
+
+.pagination a, .pagination strong{border-color:#D7D7D7;}
+.pagination .current *{color:#e0e0eb; background-color:#ff5050;}
+
+#backtotop{color:#e0e0eb; background-color:#ff5050;}
+
+
+/* Tables + Comments */
+table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
+#comments input:focus, #comments textarea:focus, #comments *:required:focus{border-color:#ff5050;}
+th{color:#e0e0eb; background-color:#373737;}
+tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
+tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+table a, #comments a{background-color:inherit;}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------- */
+#Wushu{
+	width:400px;
+	height: 550px;
+}
+/* Embeded videos */
+#videos{
+	width: 920px; 
+    height: auto; 
+    margin: 0 auto;}
+
+#video1{
+	width: 47.5%; 
+    height: 300px; 
+    float: left; 
+    margin-right: 5%;}
+
+#video2{
+	width: 47.5%; 
+    height: 300px; 
+    float: left; }
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* Price table */
+* {box-sizing: border-box;}
+
+  .columns {
+	float: left;
+	width: 33.3%;
+	padding: 8px;}
+  
+  .price {
+	list-style-type: none;
+	border: 1px solid #ff5050;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;}
+  
+  .price:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+	color: #ff5050;
+	font-size: 25px;
+  }
+  
+  .price li {
+	border-bottom: 1px solid #eee;
+	padding: 20px;
+	text-align: center;
+  }
+
+  .price .grey {
+	font-size: 20px;
+	color:#eee;
+  }
+
+  .button {
+	background-color: #04AA6D;
+	border: none;
+	color: #eee;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	border-radius: 16px;
+  }
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------- */
+  
+  * {box-sizing:border-box}
+
+  /* Slideshow */
+  .slideshow-container {
+	padding-top: 60px;
+	max-width: 800px;
+	position: relative;
+	margin: auto;
+  }
+  
+  .mySlides {
+	display: none;
+  }
+
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 20px;
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  .next {
+	right: 0;
+	border-radius: 6px 0 0 6px;
+  }
+  
+  .prev:hover, .next:hover {
+	background-color: #ff5050;
+  }
+
+  .text {
+	color: #ff5050;
+	font-size: 18px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+  }
+  
+  
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.5s ease;
+  }
+  
+.dot:hover {
+	background-color: #ff5050;
+  }
+ 
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+@-ms-viewport{width:device-width;}
+
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
